@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f6;
+    color: #333;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #075e54;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo h1 {
+    font-size: 26px;
+}
+
+.logo p {
+    margin-top: 5px;
+}
+
+.header nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header nav a:hover,
+.header nav a.active {
+    color: #ffd166;
+}
+
+/* CONTENIDO */
+
+.contenido {
+    min-height: 70vh;
+    padding: 40px 7%;
+}
+
+/* INICIO */
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    min-height: 400px;
+}
+
+.inicio-texto {
+    flex: 1;
+}
+
+.inicio h2 {
+    font-size: 36px;
+    color: #075e54;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.inicio img {
+    width: 50%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    background-color: #087f70;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-top: 15px;
+    border: none;
+}
+
+.boton:hover {
+    background-color: #064f46;
+}
+
+/* DESTINOS */
+
+.destinos h2,
+.nosotros h2 {
+    text-align: center;
+    color: #075e54;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.descripcion {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-7px);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta-info {
+    padding: 20px;
+}
+
+.tarjeta-info h3 {
+    color: #075e54;
+    margin-bottom: 15px;
+}
+
+.tarjeta-info p {
+    margin-bottom: 10px;
+}
+
+/* DETALLE */
+
+.detalle {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.detalle h2 {
+    color: #075e54;
+    margin-bottom: 25px;
+}
+
+.detalle img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.detalle-info {
+    text-align: left;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+/* NOSOTROS */
+
+.nosotros {
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.nosotros h3 {
+    color: #087f70;
+    margin: 25px 0 10px;
+}
+
+.nosotros p {
+    margin-top: 15px;
+}
+
+/* ERROR 404 */
+
+.error404 {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.error404 h1 {
+    font-size: 90px;
+    color: #087f70;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #075e54;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    line-height: 2;
+}
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header nav {
+        justify-content: center;
+    }
+
+    .inicio {
+        flex-direction: column;
+    }
+
+    .inicio img {
+        width: 100%;
+    }
+}
