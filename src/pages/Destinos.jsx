@@ -56,7 +56,7 @@ export default function Destinos() {
 
                         <div className="tarjeta-info">
 
-                            <h3>{destino.nombre}hola</h3>
+                            <h3>{destino.nombre}</h3>
 
                             <p>
                                 <strong>Ciudad:</strong> {destino.ciudad}
